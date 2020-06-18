@@ -6,16 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class TercerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tercer);
     }
-    //Metodo para el Boton Siguiente
-    public void Siguiente(View view){
-        Intent siguiente = new Intent(this, SegundaActivity.class);
-        startActivity(siguiente);
+    //Metodo par el boton Anterior
+    public void Anterior(View view){
+        Intent anterior = new Intent(this, SegundaActivity.class);
+        startActivity(anterior);
     }
 }
