@@ -17,12 +17,16 @@ public class SegundaActivity extends AppCompatActivity {
     public void Anterior(View view){
         Intent anterior = new Intent(this, MainActivity.class);
         startActivity(anterior);
-
     }
-    //Metodo para el boton Inicio
-    public void Inicio (View view){
-        Intent Inicio = new Intent(this, TercerActivity.class);
-        startActivity(Inicio);
 
+    //Metodo para el boton Inicio de Sesion
+    public void Inicio(View view){
+        Intent inicio = new Intent(this, TercerActivity.class);
+        startActivity(inicio);
+    }
+    //Metodo para en boton Registarse
+    public void Registrarse(View view){
+        Intent registrarse =new Intent(this, CuartaActivity.class);
+        startActivity(registrarse);
     }
 }
