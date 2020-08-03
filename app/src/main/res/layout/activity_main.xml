@@ -5,32 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animationCache="false"
-    android:background="#A3E4D7"
+    android:background="@drawable/fondoprincipal"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#A3E4D7"
+        android:background=""
         android:shadowColor="#1832C6"
         android:text="@string/bienvenidos"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.04" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="118dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="179dp"
-        android:layout_marginBottom="179dp"
-        android:background="@color/colorAccent"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:background="@color/cardview_light_background"
         android:clickable="false"
         android:onClick="Siguiente"
         android:shadowColor="#2B43CA"
@@ -40,20 +38,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="227dp"
-        android:layout_height="162dp"
-        android:layout_marginTop="104dp"
-        android:contentDescription="@string/todo"
-        android:verticalScrollbarPosition="left"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintVertical_bias="0.7" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"
