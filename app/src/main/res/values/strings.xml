@@ -24,6 +24,11 @@
     <string name="iniciar">Iniciar</string>
     <string name="atras">Atras</string>
 
+    <string name="libros">Libros</string>
+    <string name="t1">quinta activity</string>
+    <string name="quiz">Quiz</string>
+    <string name="t2">quiz</string>
+
 
 
 </resources>

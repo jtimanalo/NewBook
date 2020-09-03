@@ -4,39 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F7000000"
-    tools:context=".activityquinta">
+    android:background="#20282E"
+    tools:context=".QuintaActivity">
 
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#AD00BCD4"
-        android:text="Inicio"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="23dp" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="152dp"
+        android:layout_width="match_parent"
         android:layout_height="194dp"
+        android:background="#A6000000"
         android:visibility="visible"
-        app:srcCompat="@drawable/carmillaportada"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="64dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16"
+        app:srcCompat="@drawable/carmillaportada" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="307dp"
-        android:layout_height="132dp"
-        android:background="#0DFFFFFF"
+        android:layout_width="254dp"
+        android:layout_height="145dp"
+        android:background="#A6000000"
         android:text="sipnosis"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="#FFFFFF"
         android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="281dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.60"
         tools:text="La historia de Carmilla es reconocida por retratar una vampiresa extremadamente bella, cuyas víctimas son mujeres jóvenes, con las cuales a veces se relaciona sentimentalmente -la representación de la sexualidad de Carmilla era un tema controversial en la época en que se publicó la obra.  " />
 
     <Button
@@ -44,9 +43,77 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="433dp"
+        android:background="#9A44D3D8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
         tools:text="leer" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#A6000000"
+        android:inputType="time"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:text="LIBROS" />
+
+    <ImageButton
+        android:id="@+id/ajustes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_preferences"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <ImageButton
+        android:id="@+id/btnQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Quiz"
+        android:src="@android:drawable/ic_menu_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <ImageButton
+        android:id="@+id/Biblioteca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+    <ImageButton
+        android:id="@+id/btnlibros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Libros"
+        android:src="@android:drawable/ic_menu_revert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

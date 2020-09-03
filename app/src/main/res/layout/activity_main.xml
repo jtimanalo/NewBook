@@ -12,7 +12,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background=""
+
         android:shadowColor="#1832C6"
         android:text="@string/bienvenidos"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -26,20 +26,20 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="125dp"
-        android:layout_height="41dp"
-        android:background="@color/cardview_light_background"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
         android:clickable="false"
         android:onClick="Siguiente"
-        android:shadowColor="#2B43CA"
+        android:shadowColor="#B7FFFFFF"
         android:text="@string/siguiente"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintVertical_bias="0.72" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"
