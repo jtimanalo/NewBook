@@ -1,21 +1,23 @@
-import androidx.annotation.ColumnInfo;
-import androidx.annotation.Entity;
+
+
 import androidx.annotation.NonNull;
-import androidx.annotation.PrimaryKey;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 @Entity(tableName = "libro")
 public class libro {
     public libro(){
 
     }
-    @PrimaryKey
+  @PrimaryKey
     @NonNull
 private int id;
 
 
     @ColumnInfo(name = "nombre")
     private String mNombre;
-    @ColumnInfo (name = "autor")
+    @ColumnInfo(name = "autor")
     private String mAutor;
     @ColumnInfo (name = "editorial")
     private String mEditorial;
