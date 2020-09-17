@@ -1,7 +1,7 @@
+import androidx.annotation.ColumnInfo;
 import androidx.annotation.Entity;
 import androidx.annotation.NonNull;
-
-import libro.java.PrimaryKey;
+import androidx.annotation.PrimaryKey;
 
 @Entity(tableName = "libro")
 public class libro {
@@ -9,11 +9,11 @@ public class libro {
 
     }
     @PrimaryKey
-@NonNull
+    @NonNull
 private int id;
 
 
-    @ColumnInfo (name = "nombre")
+    @ColumnInfo(name = "nombre")
     private String mNombre;
     @ColumnInfo (name = "autor")
     private String mAutor;
