@@ -32,4 +32,17 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    def room_version =  " 2.2.5 "
+    implementación " androidx.room:room-runtime: $room_version "
+    annotationProcessor " androidx.room:room-compiler: $room_version "  // Para Kotlin, use kapt en lugar de annotationProcessor
+    // opcional: compatibilidad con Kotlin Extensions y Coroutines para Room
+    implementación " androidx.room:room-ktx: $room_version "
+    // opcional - soporte RxJava para Room
+    implementación " androidx.room:room-rxjava2: $room_version "
+    // opcional: soporte de Guava para Room, incluidos Optional y ListenableFuture
+    implementación " androidx.room:room-guava: $room_version "
+    // Ayudantes de prueba
+    testImplementation " androidx.room:room-testing: $room_version "
+
 }
