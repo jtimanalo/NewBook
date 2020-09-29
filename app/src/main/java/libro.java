@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "Libro")
 public class libro {
-    public libro(){
+    public Libro(){
 
     }
   @PrimaryKey
